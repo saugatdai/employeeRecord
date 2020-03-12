@@ -1,0 +1,48 @@
+{{>header}}
+<main>
+    <form id='registration'>
+        <table>
+            <tr>
+                <td>Name : </td>
+                <td><input type='text' name='name'></td>
+            </tr>
+            <tr>
+                <td>Age : </td>
+                <td><input type="number" name='age'></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> female
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country">
+                        <option value="India">India</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Srilanka">Srilanka</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Maldives">Maldives</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Comments : </td>
+                <td><textarea name="comment" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button id="register" type="button">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="status">Status</div>
+</main>
+{{>footer}}

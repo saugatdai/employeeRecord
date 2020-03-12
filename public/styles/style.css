@@ -1,0 +1,118 @@
+/*
+    #ffc247
+    #406EB3
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 20%;
+}
+
+nav ul {
+    background-color: #ffc247;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+nav a:link{
+    color: #000;
+    text-decoration: none;
+    padding: 20px 40px;
+}
+
+nav a:visited{
+    color: #000;
+}
+
+nav a:hover{
+    background: #406EB3;
+}
+
+main{
+    background: #406EB3;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+input[type='text'], input[type='number'],select,textarea{
+    padding: 10px;
+    width: 100%;
+}
+
+button{
+    background: #ffc247;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#status{
+    background: #FFDC99;
+    color: green;
+    width: 50%;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+#userTable{
+    border-collapse: collapse;
+}
+#userTable tr:nth-child(2n){
+    background: #ffc247;
+    color: #406EB3;
+}
+
+#userTable tr:nth-child(2n+1){
+    background: #eee;
+}
+
+#userTable tr:hover{
+    background: #fff;
+}
+
+#userTable th{
+    background: #406EB3;
+    color: #fff;
+}
+
+#userTable th, #userTable td{
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+span.update, span.delete{
+    color: #406EB3;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer{
+    padding: 20px;
+    background: #ffc247;
+    align-self: stretch;
+    text-align: center;
+}

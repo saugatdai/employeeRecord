@@ -1,0 +1,25 @@
+{{>header}}
+    <table id="userTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Country</th>
+            <th>Comment</th>
+            <th>Operations</th>
+        </tr>
+        {{#each users}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.age}}</td>
+                <td>{{this.gender}}</td>
+                <td>{{this.country}}</td>
+                <td>{{this.comments}}</td>
+                <td>
+                    <span class="delete" data-del="{{this._id}}">Delete</span><br>
+                    <span class="update" data-upd={{this._id}}>Update</a>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+{{>footer}}
